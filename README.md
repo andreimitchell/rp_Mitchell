@@ -1,2 +1,2 @@
-# rp_Mitchell
-Repository for Andrei Mitchell's research project website built using the Bootstrap framework
+# project-215-website
+Repository for a website built using the Bootstrap framework
