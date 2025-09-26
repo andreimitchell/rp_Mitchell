@@ -95,6 +95,11 @@
     background-color: #778DA9; /*#0096c7*/
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon  {
+    filter: invert(100%);
+}
+
+
 /* ----------------- ID CSS ----------------- */
 
 /* -----------------Underline Animation CSS -----------------*/
