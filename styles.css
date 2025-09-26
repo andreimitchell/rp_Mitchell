@@ -23,7 +23,9 @@
   font-style: normal;
 } 
 
-
+.thankcolor {
+    background-color: #1b263bc0;
+}
 
 .about{
     width:400px;
@@ -38,10 +40,6 @@
     background-color: #dbe3e7;
 }
 
-.body{
-    background-color: #778da9bb;
-    
-}
 
 .logoclass {
     filter: invert(80%);
