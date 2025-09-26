@@ -12,6 +12,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
                 integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
                 crossorigin="anonymous"></script>
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body class="body">
     <div class="container-lg">
@@ -34,13 +39,13 @@
                     <!-- Links to hamburger menu button -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item ">
-                            <a href="authors.html" class="nav-link hover-underline-animation nbMenuItem">Authors</a>
+                            <a href="authors.html" class="nav-link hover-underline-animation nbMenuItem inter-h1">Authors</a>
                         </li>
                         <li class="nav-item">
-                            <a href="procedure.html" class="nav-link hover-underline-animation nbMenuItem">Procedure</a>
+                            <a href="procedure.html" class="nav-link hover-underline-animation nbMenuItem inter-h1">Procedure</a>
                         </li>
                         <li class="nav-item">
-                            <a href="results.html" class="nav-link hover-underline-animation nbMenuItem">Results</a>
+                            <a href="results.html" class="nav-link hover-underline-animation nbMenuItem inter-h1">Results</a>
                         </li>
                     </ul>
                 </div>
@@ -53,74 +58,74 @@
             <div class="container">
                 <br>
                 <div class="text-center">
-                    <h1>Procedure</h1>
-                    <h2>The procedure shows how the shoes were designed, 3D printed, assembled, and tested by measuring the feet during use.</h2>
+                    <h1 class="inter-h1">Procedure</h1>
+                    <h2 class="inter-h2">The procedure shows how the shoes were designed, 3D printed, assembled, and tested by measuring the feet during use.</h2>
                 </div>
 
                 <hr><br>    <!-- horizontal line with line break-->
 
                 <table class="table table-hover text-center table-light table-bordered border-dark-subtle">
                     <thead>
-                        <tr class="table-primary">
-                            <th><h3>Step</h3></th>
-                            <th><h3>Description</h3></th>
-                            <th><h3>Image</h3></th>
+                        <tr class="table-active">
+                            <th><h3 class="inter-h1">Step</h3></th>
+                            <th><h3 class="inter-h1">Description</h3></th>
+                            <th><h3 class="inter-h1">Image</h3></th>
                         </tr>
                     </thead>
                     <tbody class="table-group-divider">
                         <tr class="align-middle">       <!-- 1st row -->
                             <th scope="row" class="table-secondary">
-                                <h3>1</h3>
+                                <h3 class="inter-h1">1</h3>
                             </th> <!-- scope="row" specifies at a row header cell-->
-                            <td><h3 class="howTo">Measure and scan feet</h3><h6>Take key foot measurements and create 3D scans using Foot Scan 3D.</h6></td>
+                            <td><h3 class="howTo inter-h1">Measure and scan feet</h3><h6 class="inter-h2">Take key foot measurements and create 3D scans using Foot Scan 3D.</h6></td>
                             <td class="text-center"><img src="img/scannedfootmodel.png" alt="Foot scan"></td>
                         </tr> <!-- End first row -->
 
                         <tr class="align-middle">       <!-- 2nd row -->
                             <th scope="row" class="table-secondary">
-                                <h3>2</h3>
+                                <h3 class="inter-h1">2</h3>
                             </th> <!-- scope="row" specifies at a row header cell-->
-                            <td><h3 class="howTo">Design shoe</h3><h6>Model the transitional shoe, including the wide toe box, zero-drop insole, and kinetic sand insole, in Autodesk Fusion.</h6></td>
+                            <td><h3 class="howTo inter-h1">Design shoe</h3><h6 class="inter-h2">Model the transitional shoe, including the wide toe box, zero-drop insole, and kinetic sand insole, in Autodesk Fusion.</h6></td>
                             <td class="text-center"><img src="img/designedshoe.png" alt="Shoe models"></td>
                         </tr> <!-- End 2nd row -->
 
                         <tr class="align-middle">       <!-- 3rd row -->
                             <th scope="row" class="table-secondary">
-                                <h3>3</h3>
+                                <h3 class="inter-h1">3</h3>
                             </th> <!-- scope="row" specifies at a row header cell-->
-                            <td><h3 class="howTo">Prepare 3D print files</h3><h6>Export models as STL files and set up print parameters in Bambu Studio.</h6></td>
+                            <td><h3 class="howTo inter-h1">Prepare 3D print files</h3><h6 class="inter-h2">Export models as STL files and set up print parameters in Bambu Studio.</h6></td>
                             <td class="text-center"><img src="img/bambu.png" alt="Bambu Handy logo"></td>
                         </tr> <!-- End 3rd row -->
 
                         <tr class="align-middle">       <!-- 4th row -->
                             <th scope="row" class="table-secondary">
-                                <h3>4</h3>
+                                <h3 class="inter-h1">4</h3>
                             </th> <!-- scope="row" specifies at a row header cell-->
-                            <td><h3 class="howTo">3D print components</h3><h6>Print the shoe base, top, and insole using TPU filament.</h6></td>
+                            <td><h3 class="howTo inter-h1">3D print components</h3><h6 class="inter-h2">Print the shoe base, top, and insole using TPU filament.</h6></td>
                             <td class="text-center"><img src="img/printing.png" alt="Printing image"></td>
                         </tr> <!-- End 4th row -->
 
                         <tr class="align-middle">       <!-- 5th row -->
                             <th scope="row" class="table-secondary">
-                                <h3>5</h3>
+                                <h3 class="inter-h1">5</h3>
                             </th> <!-- scope="row" specifies at a row header cell-->
-                            <td><h3 class="howTo">Assemble shoe</h3><h6>Fill the insole with kinetic sand, insert it into the base, attach the top, and secure with tape.</h6></td>
+                            <td><h3 class="howTo inter-h1">Assemble shoe</h3><h6 class="inter-h2">Fill the insole with kinetic sand, insert it into the base, attach the top, and secure with tape.</h6></td>
                             <td class="text-center"><img src="img/procedureshoeimage.png" alt="Assembled shoe"></td>
                         </tr> <!-- End 5th row -->
 
                         <tr class="align-middle">       <!-- 6th row -->
                             <th scope="row" class="table-secondary">
-                                <h3>6</h3>
+                                <h3 class="inter-h1">6</h3>
                             </th> <!-- scope="row" specifies at a row header cell-->
-                            <td><h3 class="howTo">Test shoe</h3><h6>Wear the shoes for one week and record foot measurements daily, including bunion angle and arch distances.</h6></td>
+                            <td><h3 class="howTo inter-h1">Test shoe</h3><h6 class="inter-h2">Wear the shoes for one week and record foot measurements daily, including bunion angle and arch distances.</h6></td>
                             <td class="text-center"><img src="img/how-measured.png" alt="firebase Logo"></td>
                         </tr> <!-- End 6th row -->
 
                         <tr class="align-middle">       <!-- 7th row -->
                             <th scope="row" class="table-secondary">
-                                <h3>7</h3>
+                                <h3 class="inter-h1">7</h3>
                             </th> <!-- scope="row" specifies at a row header cell-->
-                            <td><h3 class="howTo">Analyze data</h3><h6>Calculate changes, compare to control shoes, and evaluate effectiveness of the transitional shoe.</h6></td>
+                            <td><h3 class="howTo inter-h1">Analyze data</h3><h6 class="inter-h2">Calculate changes, compare to control shoes, and evaluate effectiveness of the transitional shoe.</h6></td>
                             <td class="text-center"><img src="img/analysis.jpg" alt="Data analysis image"></td>
                         </tr> <!-- End 7th row -->
                     </tbody>
@@ -133,7 +138,7 @@
         <!-- Footer (require a Bootstrap icon) -->
         <footer class="p-5 footer text-light text-center position-relative">
             <div class="container">
-                <p class="lead">Copyright &copy; SE 2025 Bootstrap</p>
+                <p class="lead inter-p">Copyright &copy; SE 2025 Bootstrap</p>
                 <a href="#" class="position-absolute bottom-0 end-0 p-5">
                     <i class="bi bi-arrow-up-circle h2 icon-white"></i>
                 </a>

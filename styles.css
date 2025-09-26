@@ -1,5 +1,33 @@
 /* ----------------- Class CSS ----------------- */
 
+
+/* Inter font from Google Fonts */
+.inter-h1 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+.inter-h2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+} 
+
+.inter-p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+} 
+
+.tablecolor {
+    background-color:aqua;
+}
+
+
 .about{
     width:400px;
     margin: auto;
