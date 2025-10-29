@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoes That Make The Transition To Barefoot Shoes Smooth And Injury-Free</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-                     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-                     crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
-                crossorigin="anonymous"></script>
-                <!-- Inter font from Google Fonts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- Inter font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+    <script src="js/linechart.js" defer></script>
 </head>
 
 <body>
     <div>
-        
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
             <!-- lg = large breakpoint, navbar-dark = make the text light-->
@@ -39,16 +43,24 @@
                     <!-- Links to hamburger menu button -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item ">
-                            <a href="authors.html" class="nav-link hover-underline-animation nbMenuItem inter-h1">Authors</a>
+                            <a href="authors.html"
+                                class="nav-link hover-underline-animation nbMenuItem inter-h1">Authors</a>
                         </li>
                         <li class="nav-item">
-                            <a href="procedure.html" class="nav-link hover-underline-animation nbMenuItem inter-h1">Procedure</a>
+                            <a href="procedure.html"
+                                class="nav-link hover-underline-animation nbMenuItem inter-h1">Procedure</a>
                         </li>
                         <li class="nav-item">
-                            <a href="results.html" class="nav-link hover-underline-animation nbMenuItem inter-h1">Results</a>
+                            <a href="results.html"
+                                class="nav-link hover-underline-animation nbMenuItem inter-h1">Results</a>
                         </li>
                         <li class="nav-item">
-                            <a href="workscited.html" class="nav-link hover-underline-animation nbMenuItem inter-h1">Works Cited</a>
+                            <a href="workscited.html"
+                                class="nav-link hover-underline-animation nbMenuItem inter-h1">Works Cited</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="models.html"
+                                class="nav-link hover-underline-animation nbMenuItem inter-h1">Models</a>
                         </li>
                     </ul>
                 </div>
@@ -56,89 +68,23 @@
 
         </nav>
 
-        <!-- Showcase -->
-        <section class="showcase text-light p-2 text-center">
-            <!-- p-2 = padding -->
+        <!-- Graphs showcase -->
+        <section class="overview">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 p-0 d-flex align-items-center">
-                        <img class="img-fluid" src="img/shoe-image.png" alt="Engineered Shoe">
-                        <!-- img-fluid = won't expand image lrarger than the container and will scale down if the browser window is narrowed-->
-                    </div>
-                    <div class="col-sm-6 p-0 d-flex align-items-center">
-                        <div class="container">
-                            <h1 class="display-4 inter-h1">Shoes That Make The Transition To Barefoot Shoes Smooth And Injury-Free</h1>
-                            <h2 class="inter-h2">Andrei Mitchell</h2>
-                        </div>
-                    </div>
-                </div>
+                <br> <!-- Line break -->
+                <h1 class="text-center about-team inter-h1">Results</h1>
+                <hr><br> <!-- Horizontal line and line break -->
             </div>
+            <!-- nike quest shoes graph -->
+            <div class="container d-flex overflow-hidden bg-light rounded-2" id="chart-wrapper">
+                <canvas id="NQlineChart" height="400px"></canvas>
+            </div>
+
+            <br>
         </section>
 
-        <!-- Overview -->
-        <section class="overview text-dark p-2 text-left">
-            <div class="container">
-                <div class="row"> <!-- Row 1 -->
-                    <div class="col-sm-4 p-3">
-                        <img class="img-fluid mb-2" src="img/cushion.jpg" alt="Cushioned and heel drop display">
-                        <img class="img-fluid mb-2" src="img/toebox.png" alt="Toebox display">
-                        <img class="img-fluid mb-2" src="img/sideview.png" alt="Side view of minimalist shoes">
-                    </div>
-                    <div class="col-sm-8 p-3">
-                        <h1 class="ovPadLeft inter-h1">Background</h1>
-                        <p class="lead overview-font ovPadLeft inter-p">Barefoot and minimalist shoes have gained significant attention for their potential benefits in promoting natural foot mechanics, strengthening intrinsic muscles, and improving gait efficiency. Unlike conventional footwear, which often features narrow toe boxes, elevated heel drops, and excessive cushioning, barefoot shoes emphasize a wide toe box for natural splay, zero-drop platforms to maintain neutral alignment, and minimal cushioning to enhance sensory feedback. These design features can reduce abnormal loading patterns and support long-term foot health. However, transitioning to barefoot shoes is notoriously difficult, as the sudden decrease in external support places greater demand on tendons, muscles, and connective tissues that may have been weakened by years of traditional shoe use. Improper or rushed adaptation can lead to injuries such as plantar fasciitis, shin splints, or Achilles tendinopathy. This challenge highlights the need for innovative solutions—such as engineered insoles—that bridge the gap between supportive footwear and barefoot function, providing a safer transition pathway while preserving the natural benefits of minimalist design.</p>
-                    </div>
-                </div>
-                <div class="row"> <!-- Row 2 -->
-                    <div class="col-sm-8 p-3">
-                        <h1 class="inter-h1">Rationale</h1>
-                        <p class="lead overview-font ovPadRight inter-p">Traditional shoes, while widely worn, often contribute to foot deformities, poor alignment, chronic pains, and even injuries due to their narrow toe boxes, elevated heel drops, and excessive cushioning. In contrast, barefoot shoes are designed with wide toe boxes, zero or minimal heel drop, and reduced cushioning, which encourage natural foot mechanics, correct deformities, improve alignment, and strengthen the feet. However, a major challenge arises when individuals transition abruptly from traditional shoes to barefoot shoes: without adaptation, the sudden change in loading patterns and muscle demands may cause injuries. This highlights the need for transitional shoes, which combine the corrective and strengthening benefits of barefoot footwear with protective elements that maintain safety. By offering a gradual adaptation pathway, transitional shoes provide a safer, more sustainable solution for individuals seeking the long-term benefits of barefoot mechanics without the high risk of injury during transition.</p>
-                    </div>
-                    <div class="col-sm-4 p-3">
-                        <img class="img-fluid mb-2" src="img/shinsplints.png" alt="Shin splints">
-                        <img class="img-fluid mb-2" src="img/plantar.jpeg" alt="Plantar fasciitis">
-                        <img class="img-fluid mb-2" src="img/bunion.png" alt="Bunions">
-                    </div>
-                </div>
-                <div class="row"> <!-- Row 3 -->
-                    <div class="col-sm-4 p-3">
-                        <img class="img-fluid mb-2" src="img/biomechlab.jpg" alt="Biomechanics lab">
-                        <img class="img-fluid mb-2" src="img/cover.png" alt="Research image">
-                    </div>
-                    <div class="col-sm-8 p-3">
-                        <h1 class="ovPadLeft inter-h1">Research Practicum</h1>
-                        <p class="lead overview-font ovPadLeft inter-p">Research Practicum is a course designed to immerse students in the process of conducting authentic, hands-on research. It provides the opportunity to identify a problem, review existing literature, and design a study that applies scientific methods to generate meaningful results. Through this class, students develop critical skills such as problem-solving, data collection, analysis, and academic writing, while also learning how to present findings in a clear and professional manner. Beyond the technical aspects, Research Practicum emphasizes creativity, collaboration, and independent thinking, preparing students to approach real-world challenges with both rigor and innovation.</p>
-                    </div>
-                </div>
-                <br>
-                <h1 class="inter-h1 text-center md-3">Models Slideshow</h1>
-                <!-- Bootstrap Carousel -->
-                <div id="carouselExample" class="carousel slide mt-3">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/slideshow1.png" class="d-block w-75 mx-auto" alt="Base model">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/slideshow2.png" class="d-block w-75 mx-auto" alt="Top model">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/slideshow3.png" class="d-block w-75 mx-auto" alt="Insole model">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                
-                
-                </div>
-            </div>
-        </section>
+
+
 
         <!-- Footer (require a Bootstrap icon) -->
         <footer class="p-5 footer text-light text-center position-relative">
@@ -152,4 +98,5 @@
 
     </div>
 </body>
+
 </html>
