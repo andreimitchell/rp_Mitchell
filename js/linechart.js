@@ -64,7 +64,7 @@ async function createChartNQ() {
                 //  including display properties.  To add more datasets, 
                 //  place a comma after the closing curly brace of the last
                 //  data set object and add another dataset object. 
-                { // referring to label for xYears
+                { // referring to label for days
                     label: `Right Foot Bunion Angle`,     // Dataset label for legend
                     data: data.yRFbunionAngle,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
@@ -73,7 +73,7 @@ async function createChartNQ() {
                     borderWidth: 1   // Data marker border width
                 },
 
-                { // referring to label for xYears
+                { // referring to label for days
                     label: `Left Foot Bunion Angle`,     // Dataset label for legend
                     data: data.yLFbunionAngle,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
@@ -163,7 +163,7 @@ async function createChartNQ() {
                 //  data set object and add another dataset object. 
     
 
-                { // referring to label for xYears
+                { // referring to label for days
                     label: `Right Foot Ball of Foot to Beginning of Arch Distance`,     // Dataset label for legend
                     data: data.yRFbof,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
@@ -172,7 +172,7 @@ async function createChartNQ() {
                     borderWidth: 1   // Data marker border width
                 },
 
-                 { // referring to label for xYears
+                 { // referring to label for days
                     label: `Left Foot Ball of Foot to Beginning of Arch Distance`,     // Dataset label for legend
                     data: data.yLFbof,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
@@ -181,7 +181,7 @@ async function createChartNQ() {
                     borderWidth: 1   // Data marker border width
                 },
 
-                 { // referring to label for xYears
+                 { // referring to label for days
                     label: `Right Foot Midpoint of the Ball to Beginning of Arch to the Middle of the Arch Distance`,     // Dataset label for legend
                     data: data.yRFmp,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
@@ -190,7 +190,7 @@ async function createChartNQ() {
                     borderWidth: 1   // Data marker border width
                 },
 
-                 { // referring to label for xYears
+                 { // referring to label for days
                     label: `Left Foot Midpoint of the Ball to Beginning of Arch to the Middle of the Arch Distance`,     // Dataset label for legend
                     data: data.yLFmp,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
@@ -339,7 +339,7 @@ async function createChartES() {
                 //  including display properties.  To add more datasets, 
                 //  place a comma after the closing curly brace of the last
                 //  data set object and add another dataset object. 
-                { // referring to label for xYears
+                { // referring to label for days
                     label: `Right Foot Bunion Angle`,     // Dataset label for legend
                     data: data.yRFbunionAngle,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
@@ -348,7 +348,7 @@ async function createChartES() {
                     borderWidth: 1   // Data marker border width
                 },
 
-                { // referring to label for xYears
+                { // referring to label for days
                     label: `Left Foot Bunion Angle`,     // Dataset label for legend
                     data: data.yLFbunionAngle,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
@@ -438,7 +438,7 @@ async function createChartES() {
                 //  data set object and add another dataset object. 
     
 
-                { // referring to label for xYears
+                { // referring to label for days
                     label: `Right Foot Ball of Foot to Beginning of Arch Distance`,     // Dataset label for legend
                     data: data.yRFbof,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
@@ -447,7 +447,7 @@ async function createChartES() {
                     borderWidth: 1   // Data marker border width
                 },
 
-                 { // referring to label for xYears
+                 { // referring to label for days
                     label: `Left Foot Ball of Foot to Beginning of Arch Distance`,     // Dataset label for legend
                     data: data.yLFbof,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
@@ -456,7 +456,7 @@ async function createChartES() {
                     borderWidth: 1   // Data marker border width
                 },
 
-                 { // referring to label for xYears
+                 { // referring to label for days
                     label: `Right Foot Midpoint of the Ball to Beginning of Arch to the Middle of the Arch Distance`,     // Dataset label for legend
                     data: data.yRFmp,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
@@ -465,7 +465,7 @@ async function createChartES() {
                     borderWidth: 1   // Data marker border width
                 },
 
-                 { // referring to label for xYears
+                 { // referring to label for days
                     label: `Left Foot Midpoint of the Ball to Beginning of Arch to the Middle of the Arch Distance`,     // Dataset label for legend
                     data: data.yLFmp,    
                     fill: false,           // Fill area under the linechart (true = yes, false = no)
