@@ -94,12 +94,14 @@ async function createChartNQ() {
                         display: true,
                         text: 'Day',     // x-axis title
                         font: {                   // font properties
+                            family: 'Inter',
                             size: 14
                         },
                     },
                     ticks: {                      // x-axis tick mark properties
                        min: 0,                     // starting value    
                         font: { // can change font familt if we want
+                            family: 'Inter',
                             size: 14
                         }, 
                     },
@@ -112,6 +114,7 @@ async function createChartNQ() {
                         display: true,
                         text: `Bunion Angle (${degreeSymbol})`,     // y-axis title
                         font: {
+                            family: 'Inter',
                             size: 14
                         },
                     },
@@ -119,6 +122,7 @@ async function createChartNQ() {
                         min: 0,
                         maxTicksLimit: data.yRFbunionAngle.length / 10,        // Actual value can be set dynamically
                         font: {
+                            family: 'Inter',
                             size: 12
                         }
                     },
@@ -132,6 +136,8 @@ async function createChartNQ() {
                     display: true,
                     text: 'Effects on Bunion Angle Wearing Nike Quest 6 Shoes',
                     font: {
+                        weight: 400,
+                        family: 'Inter',
                         size: 24,
                     },
                     color: '#black',
@@ -205,12 +211,14 @@ async function createChartNQ() {
                         display: true,
                         text: 'Day',     // x-axis title
                         font: {                   // font properties
+                            family: 'Inter',
                             size: 14
                         },
                     },
                     ticks: {                      // x-axis tick mark properties
                        min: 0,                     // starting value    
                         font: { // can change font familt if we want
+                            family: 'Inter',
                             size: 14
                         }, 
                     },
@@ -223,6 +231,7 @@ async function createChartNQ() {
                         display: true,
                         text: `Measurement Distance (inches)`,     // y-axis title
                         font: {
+                            family: 'Inter',
                             size: 14
                         },
                     },
@@ -230,6 +239,7 @@ async function createChartNQ() {
                         min: 0,
                         maxTicksLimit: data.yRFbunionAngle.length / 10,        // Actual value can be set dynamically
                         font: {
+                            family: 'Inter',
                             size: 12
                         }
                     },
@@ -243,6 +253,8 @@ async function createChartNQ() {
                     display: true,
                     text: 'Distance Measurements Wearing Nike Quest 6 Shoes',
                     font: {
+                        weight: 400,
+                        family: 'Inter',
                         size: 24,
                     },
                     color: '#black',
@@ -357,12 +369,14 @@ async function createChartES() {
                         display: true,
                         text: 'Day',     // x-axis title
                         font: {                   // font properties
+                            family: 'Inter',
                             size: 14
                         },
                     },
                     ticks: {                      // x-axis tick mark properties
                        min: 0,                     // starting value    
-                        font: { // can change font familt if we want
+                        font: { // can change font familt if we 
+                            family: 'Inter',
                             size: 14
                         }, 
                     },
@@ -375,6 +389,7 @@ async function createChartES() {
                         display: true,
                         text: `Bunion Angle (${degreeSymbol})`,     // y-axis title
                         font: {
+                            family: 'Inter',
                             size: 14
                         },
                     },
@@ -382,6 +397,7 @@ async function createChartES() {
                         min: 0,
                         maxTicksLimit: data.yRFbunionAngle.length / 10,        // Actual value can be set dynamically
                         font: {
+                            family: 'Inter',
                             size: 12
                         }
                     },
@@ -395,6 +411,8 @@ async function createChartES() {
                     display: true,
                     text: 'Effects on Bunion Angle Wearing Engineered Shoes',
                     font: {
+                        weight: 400,
+                        family: 'Inter',
                         size: 24,
                     },
                     color: '#black',
@@ -468,12 +486,14 @@ async function createChartES() {
                         display: true,
                         text: 'Day',     // x-axis title
                         font: {                   // font properties
+                            family: 'Inter',
                             size: 14
                         },
                     },
                     ticks: {                      // x-axis tick mark properties
                        min: 0,                     // starting value    
                         font: { // can change font familt if we want
+                            family: 'Inter',
                             size: 14
                         }, 
                     },
@@ -486,6 +506,7 @@ async function createChartES() {
                         display: true,
                         text: `Measurement Distance (inches)`,     // y-axis title
                         font: {
+                            family: 'Inter',
                             size: 14
                         },
                     },
@@ -493,6 +514,7 @@ async function createChartES() {
                         min: 0,
                         maxTicksLimit: data.yRFbunionAngle.length / 10,        // Actual value can be set dynamically
                         font: {
+                            family: 'Inter',
                             size: 12
                         }
                     },
@@ -506,6 +528,8 @@ async function createChartES() {
                     display: true,
                     text: 'Distance Measurements Wearing Engineered Shoes',
                     font: {
+                        weight: 400,
+                        family: 'Inter',
                         size: 24,
                     },
                     color: '#black',
