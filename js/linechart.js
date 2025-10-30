@@ -1,7 +1,7 @@
 // Code for generating a Chart.js line chart
 
 async function getDataNQ() {
-    const response = await fetch('./data/nqdata.csv'); // . move up one folder
+    const response = await fetch('../data/nqdata.csv'); // .. move up one folder
     const data = await response.text()                      // CSV to TEXT format
 
 
@@ -276,7 +276,7 @@ createChartNQ();
 
 
 async function getDataES() {
-    const response = await fetch('./data/esdata.csv'); // . move up one folder
+    const response = await fetch('../data/esdata.csv'); // .. move up one folder
     const data = await response.text()                      // CSV to TEXT format
 
 
