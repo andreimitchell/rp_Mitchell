@@ -276,7 +276,7 @@ createChartNQ();
 
 
 async function getDataES() {
-    const response = await fetch('rp_Mitchell/data/esdata.csv'); // .. move up one folder
+    const response = await fetch('data/esdata.csv'); // .. move up one folder
     const data = await response.text()                      // CSV to TEXT format
 
 
